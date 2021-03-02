@@ -10,7 +10,7 @@
 class UStatsComponent;
 
 // This class does not need to be modified.
-UINTERFACE(MinimalAPI)
+UINTERFACE(MinimalAPI, BlueprintType, Blueprintable)
 class UStatsActor : public UInterface
 {
 	GENERATED_BODY()

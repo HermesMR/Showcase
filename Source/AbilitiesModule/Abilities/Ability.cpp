@@ -158,7 +158,7 @@ void UAbility::StartAbility_Implementation()
 
 void UAbility::UpdateAbility_Implementation(float ElapsedTime)
 {
-	UE_LOG(AbilitiesModuleLog, Display, TEXT("UAbility::UpdateAbility"));
+	//UE_LOG(AbilitiesModuleLog, Display, TEXT("UAbility::UpdateAbility"));
 
 	if (InputMode == EAbilityInputMode::EI_ChargeAndRelease && InputPressed)
 	{
@@ -217,7 +217,7 @@ void UAbility::LaunchEffects_Implementation(float ElapsedTime)
 
 void UAbility::UpdateCooldown_Implementation(float ElapsedTime)
 {
-	UE_LOG(AbilitiesModuleLog, Display, TEXT("UAbility::UpdateCooldown"));
+	//UE_LOG(AbilitiesModuleLog, Display, TEXT("UAbility::UpdateCooldown"));
 
 	CurrentCooldown -= ElapsedTime;
 

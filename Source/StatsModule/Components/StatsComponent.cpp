@@ -80,7 +80,7 @@ float UStatsComponent::GetCurrentMaxManaValue() const
 
 void UStatsComponent::ModifyNumericStat(ENumStats Stat, const FNumericStatMod& Data)
 {
-	UE_LOG(StatsModuleLog, Display, TEXT("UStatsComponent::ModifyNumericStat"));
+	//UE_LOG(StatsModuleLog, Display, TEXT("UStatsComponent::ModifyNumericStat"));
 
 	FNumericStatValues& StatValues = GetNumStat(Stat);
 
@@ -131,7 +131,7 @@ const FNumericStatValues& UStatsComponent::GetStat(ENumStats Stat)
 
 FNumericStatValues& UStatsComponent::GetNumStat(ENumStats Stat)
 {
-	UE_LOG(StatsModuleLog, Display, TEXT("UStatsComponent::GetNumStat"));
+	//UE_LOG(StatsModuleLog, Display, TEXT("UStatsComponent::GetNumStat"));
 
 	switch (Stat)
 	{
@@ -154,7 +154,7 @@ FNumericStatValues& UStatsComponent::GetNumStat(ENumStats Stat)
 
 void UStatsComponent::ModifyCurrentStat(FNumericStatValues& CurrentStat, const FNumericStatMod& Data)
 {
-	UE_LOG(StatsModuleLog, Display, TEXT("UStatsComponent::ModifyCurrentStat"));
+	//UE_LOG(StatsModuleLog, Display, TEXT("UStatsComponent::ModifyCurrentStat"));
 
 	if (Data.Value == 0)
 		return;
